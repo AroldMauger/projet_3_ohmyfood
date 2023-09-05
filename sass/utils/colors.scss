@@ -1,15 +1,3 @@
-@mixin primary {
-  color: #9356dc;
-}
-
-@mixin back-primary {
-  background-color: #9356dc;
-}
-
-@mixin secondary {
-  color: #ff79da;
-}
-
-@mixin tertiary {
-  color: #99e2d0;
-}
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;

@@ -135,6 +135,23 @@ h1 {
   justify-content: center;
   gap: 18px;
 }
+.restaurants_container .cards_container .new {
+  position: relative;
+}
+.restaurants_container .cards_container .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  font-weight: 500;
+}
 .restaurants_container .cards_container .restaurant_card {
   width: 340px;
   height: 250px;

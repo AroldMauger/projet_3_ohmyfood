@@ -20,7 +20,7 @@
       content: counter(steps);
       counter-increment: steps;
       color: white;
-      @include colors.back-primary;
+      background-color: colors.$primary;
       width: 24px;
       height: 24px;
       border-radius: 50%;
@@ -49,7 +49,7 @@
       color: grey;
     }
     & .fa-store {
-      @include colors.primary;
+      color: colors.$primary;
     }
   }
 }
