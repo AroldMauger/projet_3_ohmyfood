@@ -125,6 +125,7 @@ h1 {
 .restaurants_container {
   background-color: #f6f6f6;
   padding: 0 1rem;
+  padding-bottom: 66px;
 }
 .restaurants_container h2 {
   padding-top: 54px;
@@ -188,6 +189,30 @@ h1 {
 .restaurants_container .cards_container .restaurant_card .card_content .fa-heart {
   margin-right: 15px;
   font-size: 20px;
+}
+
+footer {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding: 22px 25px 22px 25px;
+}
+footer h2 {
+  margin: 0px;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+}
+footer .text_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 16px;
+}
+footer .text_footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .text_footer i {
+  margin-right: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

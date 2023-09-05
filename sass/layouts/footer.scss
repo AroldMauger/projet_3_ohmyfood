@@ -1,0 +1,23 @@
+footer {
+  background-color: rgba(53, 53, 53, 1);
+  color: white;
+  padding: 22px 25px 22px 25px;
+  & h2 {
+    margin: 0px;
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+  }
+  .text_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 16px;
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+    & i {
+      margin-right: 11px;
+    }
+  }
+}
