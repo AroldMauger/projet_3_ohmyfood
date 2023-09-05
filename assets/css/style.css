@@ -9,10 +9,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  padding: 0 1rem;
-}
-
 header {
   position: relative;
 }
@@ -42,9 +38,12 @@ h1 {
 
 .explorer_restaurants {
   text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 57px;
 }
 .explorer_restaurants h2 {
-  margin-top: 39px;
+  margin-top: 0px;
+  padding-top: 40px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -71,7 +70,12 @@ h1 {
 }
 
 .fonctionnement {
+  padding: 0 1rem;
   counter-reset: steps;
+}
+.fonctionnement h2 {
+  margin-top: 48px;
+  margin-bottom: 26px;
 }
 .fonctionnement ol {
   display: flex;
@@ -116,6 +120,57 @@ h1 {
 }
 .fonctionnement li .fa-store {
   color: #9356dc;
+}
+
+.restaurants_container {
+  background-color: #f6f6f6;
+  padding: 0 1rem;
+}
+.restaurants_container h2 {
+  padding-top: 54px;
+}
+.restaurants_container .cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+.restaurants_container .cards_container .restaurant_card {
+  width: 340px;
+  height: 250px;
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  background-color: white;
+}
+.restaurants_container .cards_container .restaurant_card .card_image {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+.restaurants_container .cards_container .restaurant_card .card_content {
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants_container .cards_container .restaurant_card .card_content .card_text {
+  margin-top: 16px;
+  margin-left: 13px;
+  margin-bottom: 10px;
+}
+.restaurants_container .cards_container .restaurant_card .card_content .card_text h3 {
+  margin: 0px;
+}
+.restaurants_container .cards_container .restaurant_card .card_content .card_text p {
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+.restaurants_container .cards_container .restaurant_card .card_content .fa-heart {
+  margin-right: 15px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
