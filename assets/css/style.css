@@ -70,21 +70,52 @@ h1 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
+.fonctionnement {
+  counter-reset: steps;
+}
 .fonctionnement ol {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 25px;
+  padding-inline: 32px 20px;
+  position: relative;
 }
 .fonctionnement li {
   background-color: rgb(246, 246, 246);
-  padding: 28px 38px;
+  padding: 28px 28px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   flex-grow: 1;
   border-radius: 20px;
   font-weight: 500;
   font-size: 16px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fonctionnement li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356dc;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: absolute;
+  left: 20px;
+}
+.fonctionnement li .fa-mobile-screen-button {
+  color: grey;
+}
+.fonctionnement li .fa-list-ul {
+  color: grey;
+}
+.fonctionnement li .fa-store {
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=style.css.map */

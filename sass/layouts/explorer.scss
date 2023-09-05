@@ -1,4 +1,4 @@
-@import "../utils/box-shadow.scss";
+@use "../utils/box-shadow.scss";
 
 .explorer_restaurants {
   text-align: center;
@@ -23,7 +23,7 @@
     // box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     transition: opacity 0.2s ease;
     transition: box-shadow 0.2s ease;
-    @include base-shadow;
+    @include box-shadow.base-shadow;
   }
   & button:hover {
     opacity: 0.8;
