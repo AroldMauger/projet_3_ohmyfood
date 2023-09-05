@@ -45,10 +45,8 @@
       }
       .card_content {
         height: 30%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        position: relative;
+
         .card_text {
           margin-top: 16px;
           margin-left: 13px;
@@ -62,9 +60,27 @@
             margin-bottom: 12px;
           }
         }
-        .fa-heart {
+        i {
           margin-right: 15px;
-          font-size: 20px;
+          font-size: 24px;
+          position: absolute;
+          right: 1rem;
+          top: 50%;
+          transform: translateY(-140%);
+        }
+        .fa-solid {
+          margin-right: 15px;
+          font-size: 24px;
+          color: transparent;
+          position: absolute;
+          background-image: linear-gradient(colors.$primary, colors.$secondary);
+          background-clip: text;
+          -webkit-background-clip: text;
+          opacity: 0;
+          transition: opacity 0.2s ease;
+        }
+        .fa-solid:hover {
+          opacity: 1;
         }
       }
     }
