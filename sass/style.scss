@@ -8,11 +8,11 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
 }
-
 @media screen and (max-width: 768px) {
   header {
     position: relative;
   }
+
   h1 {
     font-family: "Shrikhand", cursive;
     text-align: center;
@@ -20,6 +20,7 @@ body {
     padding: 14px;
     margin: 0px;
   }
+
   .location {
     background-color: var(--Grey-2, #eaeaea);
     text-align: center;
@@ -29,24 +30,30 @@ body {
     gap: 17px;
     justify-content: center;
   }
+
   .location_city {
     margin: 0px;
     font-size: 16px;
     font-weight: 500;
   }
+
   /* SECTION EXPLORER_RESTAURANTS */
+
   .explorer_restaurants {
     text-align: center;
   }
+
   .explorer_restaurants h2 {
     margin-top: 39px;
     font-size: 24px;
     font-weight: 700;
   }
+
   .explorer_restaurants p {
     font-size: 18px;
     margin-bottom: 27px;
   }
+
   .explorer_restaurants button {
     font-size: 16px;
     padding: 14px 19px 14px 19px;
@@ -60,10 +67,9 @@ body {
     transition: opacity 0.2s ease;
     transition: box-shadow 0.2s ease;
   }
+
   .explorer_restaurants button:hover {
     opacity: 0.8;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
