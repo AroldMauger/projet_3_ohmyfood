@@ -25,15 +25,18 @@ h1 {
   background-color: var(--Grey-2, #eaeaea);
   text-align: center;
   padding: 15px;
+  padding-left: 80px;
   display: flex;
-  flex-direction: row;
   gap: 17px;
   justify-content: center;
+  align-items: center;
 }
 .location .location_city {
   margin: 0px;
   font-size: 16px;
   font-weight: 500;
+  background-color: var(--Grey-2, #eaeaea);
+  border: none;
 }
 
 .explorer_restaurants {
