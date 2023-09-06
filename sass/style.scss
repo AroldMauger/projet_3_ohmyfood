@@ -1,7 +1,8 @@
-@import "./base/base.scss";
-@import "./layouts/header.scss";
-@import "./layouts/location.scss";
-@import "./layouts/explorer.scss";
-@import "./components/fonctionnement.scss";
-@import "./components/restaurants_container.scss";
-@import "./layouts/footer.scss";
+@import "./base/_base.scss";
+@import "./layouts/_header.scss";
+@import "./layouts/_location.scss";
+@import "./layouts/_explorer.scss";
+@import "./components/_fonctionnement.scss";
+@import "./components/_restaurants_container.scss";
+@import "./layouts/_footer.scss";
+@import "./utils/colors";

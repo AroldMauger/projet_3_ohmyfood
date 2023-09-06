@@ -119,6 +119,9 @@ h1 {
   color: grey;
 }
 .fonctionnement li .fa-store {
+  color: grey;
+}
+.fonctionnement li:hover .turn_purple {
   color: #9356dc;
 }
 

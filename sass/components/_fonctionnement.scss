@@ -1,5 +1,5 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/colors.scss";
+@use "../utils/_box-shadow.scss";
+@use "../utils/_colors.scss";
 
 .fonctionnement {
   padding: 0 1rem;
@@ -49,7 +49,12 @@
       color: grey;
     }
     & .fa-store {
-      color: colors.$primary;
+      color: grey;
+    }
+    &:hover {
+      .turn_purple {
+        color: colors.$primary;
+      }
     }
   }
 }
