@@ -13,7 +13,7 @@ header {
   position: relative;
 }
 
-h1 {
+.title_main_page {
   font-family: "Shrikhand", cursive;
   text-align: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
@@ -315,6 +315,24 @@ footer .text_footer i {
     gap: 25px;
   }
 }
+.header_restaurant-page {
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 14px;
+  position: relative;
+}
+.header_restaurant-page h1 {
+  margin: 0px;
+  text-align: center;
+}
+.header_restaurant-page a {
+  font-size: 22px;
+  color: black;
+  position: absolute;
+  top: 22px;
+}
+
 .banner {
   width: 100%;
 }
