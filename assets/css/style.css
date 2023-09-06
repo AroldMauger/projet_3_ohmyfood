@@ -90,6 +90,7 @@ header {
 .fonctionnement_container {
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 .fonctionnement_container h2 {
   margin-top: 48px;
@@ -339,23 +340,23 @@ footer .text_footer i {
   object-fit: cover;
 }
 
-main {
+#main_in_menu {
   border-radius: 25px 25px 0px 0px;
   margin-top: -55px;
   position: relative;
   background-color: #f6f6f6;
 }
-main .restaurant_name {
+#main_in_menu .restaurant_name {
   position: relative;
   display: flex;
   padding-inline: 17px;
 }
-main .restaurant_name h2 {
+#main_in_menu .restaurant_name h2 {
   margin-top: 30px;
   margin-bottom: 40px;
   font-family: "Shrikhand", cursive;
 }
-main .restaurant_name .restaurant_heart i {
+#main_in_menu .restaurant_name .restaurant_heart i {
   margin-right: 15px;
   font-size: 24px;
   position: absolute;
@@ -363,7 +364,7 @@ main .restaurant_name .restaurant_heart i {
   top: 75%;
   transform: translateY(-140%);
 }
-main .restaurant_name .restaurant_heart .fa-solid {
+#main_in_menu .restaurant_name .restaurant_heart .fa-solid {
   margin-right: 15px;
   font-size: 24px;
   color: transparent;
@@ -373,27 +374,27 @@ main .restaurant_name .restaurant_heart .fa-solid {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-main .restaurant_name .restaurant_heart .fa-solid:hover {
+#main_in_menu .restaurant_name .restaurant_heart .fa-solid:hover {
   opacity: 1;
 }
-main .section_menu {
+#main_in_menu .section_menu {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-bottom: 40px;
 }
-main .section_menu .section_entrees {
+#main_in_menu .section_menu .section_entrees {
   padding-inline: 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-main .section_menu .section_entrees h3 {
+#main_in_menu .section_menu .section_entrees h3 {
   margin: 0px;
   font-weight: 300;
   text-decoration: underline green;
 }
-main .section_menu .section_entrees .meal {
+#main_in_menu .section_menu .section_entrees .meal {
   background-color: white;
   border-radius: 25px;
   display: flex;
@@ -402,7 +403,7 @@ main .section_menu .section_entrees .meal {
   padding: 15px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-main .section_menu .section_entrees .meal .meal_text h4 {
+#main_in_menu .section_menu .section_entrees .meal .meal_text h4 {
   margin: 0px;
   margin-bottom: 5px;
   font-size: 18px;
@@ -411,7 +412,7 @@ main .section_menu .section_entrees .meal .meal_text h4 {
   white-space: nowrap;
   overflow: hidden;
 }
-main .section_menu .section_entrees .meal .meal_text p {
+#main_in_menu .section_menu .section_entrees .meal .meal_text p {
   width: 270px;
   margin: 0px;
   font-size: 15px;
@@ -419,16 +420,16 @@ main .section_menu .section_entrees .meal .meal_text p {
   white-space: nowrap;
   overflow: hidden;
 }
-main .section_menu .section_entrees .meal .price {
+#main_in_menu .section_menu .section_entrees .meal .price {
   padding-top: 20px;
   font-weight: 700;
 }
-main .button_container {
+#main_in_menu .button_container {
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
 }
-main .button_container .button_order {
+#main_in_menu .button_container .button_order {
   font-size: 16px;
   padding: 14px 19px 14px 19px;
   border-radius: 25px;
