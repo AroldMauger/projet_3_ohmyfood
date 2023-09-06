@@ -6,6 +6,7 @@ footer {
     margin: 0px;
     font-family: "Shrikhand", cursive;
     font-size: 18px;
+    font-weight: 400;
   }
   .text_footer {
     display: flex;
@@ -18,6 +19,28 @@ footer {
     }
     & i {
       margin-right: 11px;
+    }
+  }
+}
+
+/* MEDIA QUERIES DESKTOP */
+
+@media screen and (min-width: 1080px) {
+  footer {
+    height: 115px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 70px;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 60px;
+    & h2 {
+      padding-top: 15px;
+    }
+    .text_footer {
+      flex-direction: row;
+      gap: 25px;
     }
   }
 }

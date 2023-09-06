@@ -172,7 +172,7 @@ h1 {
   padding-bottom: 66px;
 }
 .section_restaurants .restaurants_container h2 {
-  padding-top: 30px;
+  padding-top: 55px;
   margin-top: 0px;
 }
 .section_restaurants .restaurants_container .cards_container {
@@ -279,6 +279,7 @@ footer h2 {
   margin: 0px;
   font-family: "Shrikhand", cursive;
   font-size: 18px;
+  font-weight: 400;
 }
 footer .text_footer {
   display: flex;
@@ -292,6 +293,27 @@ footer .text_footer a {
 }
 footer .text_footer i {
   margin-right: 11px;
+}
+
+/* MEDIA QUERIES DESKTOP */
+@media screen and (min-width: 1080px) {
+  footer {
+    height: 115px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 70px;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+  footer h2 {
+    padding-top: 15px;
+  }
+  footer .text_footer {
+    flex-direction: row;
+    gap: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
