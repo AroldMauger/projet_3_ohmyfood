@@ -1,5 +1,5 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/colors.scss";
+@use "../utils/_mixins.scss";
+@use "../utils/_colors.scss";
 
 .explorer_restaurants {
   text-align: center;
@@ -11,10 +11,13 @@
     padding-top: 40px;
     font-size: 24px;
     font-weight: 700;
+    padding-inline: 50px;
   }
   & p {
     font-size: 18px;
     margin-bottom: 27px;
+    font-weight: 300;
+    padding-inline: 25px;
   }
   & button {
     font-size: 16px;
@@ -31,10 +34,20 @@
     font-weight: 500;
     transition: opacity 0.2s ease;
     transition: box-shadow 0.2s ease;
-    @include box-shadow.base-shadow;
+    @include mixins.base-shadow;
   }
   & button:hover {
     opacity: 0.8;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/*MEDIA QUERIES DESKTOP */
+
+.explorer_restaurants {
+  & h2 {
+    @media screen and (min-width: 1080px) {
+      font-size: 40px;
+    }
   }
 }

@@ -38,6 +38,11 @@ h1 {
   background-color: var(--Grey-2, #eaeaea);
   border: none;
 }
+@media screen and (min-width: 1080px) {
+  .location .location_city {
+    font-weight: 700;
+  }
+}
 
 .explorer_restaurants {
   text-align: center;
@@ -49,10 +54,13 @@ h1 {
   padding-top: 40px;
   font-size: 24px;
   font-weight: 700;
+  padding-inline: 50px;
 }
 .explorer_restaurants p {
   font-size: 18px;
   margin-bottom: 27px;
+  font-weight: 300;
+  padding-inline: 25px;
 }
 .explorer_restaurants button {
   font-size: 16px;
@@ -72,35 +80,49 @@ h1 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-.fonctionnement {
-  padding: 0 1rem;
-  counter-reset: steps;
+/*MEDIA QUERIES DESKTOP */
+@media screen and (min-width: 1080px) {
+  .explorer_restaurants h2 {
+    font-size: 40px;
+  }
 }
-.fonctionnement h2 {
+
+.fonctionnement_container {
+  display: flex;
+  justify-content: center;
+}
+.fonctionnement_container h2 {
   margin-top: 48px;
   margin-bottom: 26px;
+  padding-left: 28px;
 }
-.fonctionnement ol {
+.fonctionnement_container .fonctionnement {
+  counter-reset: steps;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  padding-inline: 32px 20px;
+  margin-bottom: 68px;
+}
+.fonctionnement_container .fonctionnement ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
   position: relative;
 }
-.fonctionnement li {
+.fonctionnement_container .fonctionnement li {
   background-color: rgb(246, 246, 246);
   padding: 28px 28px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  flex-grow: 1;
   border-radius: 20px;
   font-weight: 500;
   font-size: 16px;
+  width: 325px;
+  height: 75px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
-  gap: 20px;
 }
-.fonctionnement li::before {
+.fonctionnement_container .fonctionnement li::before {
   content: counter(steps);
   counter-increment: steps;
   color: white;
@@ -115,17 +137,33 @@ h1 {
   position: absolute;
   left: 20px;
 }
-.fonctionnement li .fa-mobile-screen-button {
+.fonctionnement_container .fonctionnement li .fa-mobile-screen-button {
   color: grey;
 }
-.fonctionnement li .fa-list-ul {
+.fonctionnement_container .fonctionnement li .fa-list-ul {
   color: grey;
 }
-.fonctionnement li .fa-store {
+.fonctionnement_container .fonctionnement li .fa-store {
   color: grey;
 }
-.fonctionnement li:hover .turn_purple {
+.fonctionnement_container .fonctionnement li .turn_purple {
+  margin-right: 20px;
+}
+.fonctionnement_container .fonctionnement li:hover .turn_purple {
   color: #9356dc;
+}
+
+/* MEDIA QUERIES DESKTOP */
+@media screen and (min-width: 1080px) {
+  .fonctionnement_container .fonctionnement ol {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .fonctionnement_container .fonctionnement li::before {
+    position: relative;
+    left: -40px;
+  }
 }
 
 .restaurants_container {
@@ -135,6 +173,7 @@ h1 {
 }
 .restaurants_container h2 {
   padding-top: 54px;
+  margin-top: 0px;
 }
 .restaurants_container .cards_container {
   display: flex;

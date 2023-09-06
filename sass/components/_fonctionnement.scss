@@ -1,59 +1,89 @@
-@use "../utils/_box-shadow.scss";
+@use "../utils/_mixins.scss";
 @use "../utils/_colors.scss";
+.fonctionnement_container {
+  display: flex;
+  justify-content: center;
 
-.fonctionnement {
-  padding: 0 1rem;
-  counter-reset: steps;
-  & h2 {
+  h2 {
     margin-top: 48px;
     margin-bottom: 26px;
+    padding-left: 28px;
   }
-  & ol {
+  .fonctionnement {
+    counter-reset: steps;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding-inline: 32px 20px;
-    position: relative;
-  }
-  & li {
-    &::before {
-      content: counter(steps);
-      counter-increment: steps;
-      color: white;
-      background-color: colors.$primary;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
+    margin-bottom: 68px;
+    & ol {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      position: relative;
+    }
+    & li {
+      &::before {
+        content: counter(steps);
+        counter-increment: steps;
+        color: white;
+        background-color: colors.$primary;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        position: absolute;
+        left: 20px;
+      }
+
+      background-color: rgba(246, 246, 246, 1);
+      padding: 28px 28px;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      width: 325px;
+      height: 75px;
+      @include mixins.base-shadow;
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      position: absolute;
-      left: 20px;
+      & .fa-mobile-screen-button {
+        color: grey;
+      }
+      & .fa-list-ul {
+        color: grey;
+      }
+      & .fa-store {
+        color: grey;
+      }
+      & .turn_purple {
+        margin-right: 20px;
+      }
+      &:hover {
+        .turn_purple {
+          color: colors.$primary;
+        }
+      }
     }
-    background-color: rgba(246, 246, 246, 1);
-    padding: 28px 28px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    flex-grow: 1;
-    border-radius: 20px;
-    font-weight: 500;
-    font-size: 16px;
-    @include box-shadow.base-shadow;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    & .fa-mobile-screen-button {
-      color: grey;
+  }
+}
+
+/* MEDIA QUERIES DESKTOP */
+.fonctionnement_container {
+  .fonctionnement {
+    & ol {
+      @media screen and (min-width: 1080px) {
+        flex-direction: row;
+      }
     }
-    & .fa-list-ul {
-      color: grey;
-    }
-    & .fa-store {
-      color: grey;
-    }
-    &:hover {
-      .turn_purple {
-        color: colors.$primary;
+    & li {
+      &::before {
+        @media screen and (min-width: 1080px) {
+          position: relative;
+          left: -40px;
+        }
       }
     }
   }
