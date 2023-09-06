@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 68px;
+
     & ol {
       display: flex;
       flex-direction: column;
@@ -71,16 +72,15 @@
 }
 
 /* MEDIA QUERIES DESKTOP */
-.fonctionnement_container {
-  .fonctionnement {
-    & ol {
-      @media screen and (min-width: 1080px) {
+
+@media screen and (min-width: 1080px) {
+  .fonctionnement_container {
+    .fonctionnement {
+      & ol {
         flex-direction: row;
       }
-    }
-    & li {
-      &::before {
-        @media screen and (min-width: 1080px) {
+      & li {
+        &::before {
           position: relative;
           left: -40px;
         }
