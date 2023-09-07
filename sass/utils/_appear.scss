@@ -1,0 +1,6 @@
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* L'élément revient à sa position d'origine */
+  }
+}
