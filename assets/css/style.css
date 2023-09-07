@@ -430,11 +430,21 @@ footer .text_footer i {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  position: relative;
 }
 #main_in_menu .section_menu .section_entrees h3 {
   margin: 0px;
   font-weight: 300;
-  text-decoration: underline green;
+  margin-bottom: 7px;
+}
+#main_in_menu .section_menu .section_entrees h3::after {
+  content: "";
+  height: 3px;
+  width: 45px;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 25px;
+  left: 13px;
 }
 #main_in_menu .section_menu .section_entrees .meal {
   background-color: white;
@@ -467,6 +477,7 @@ footer .text_footer i {
 #main_in_menu .section_menu .section_entrees .meal .price_and_check {
   display: flex;
   overflow: hidden;
+  flex-shrink: 0;
 }
 #main_in_menu .section_menu .section_entrees .meal .price_and_check .price {
   padding-top: 20px;

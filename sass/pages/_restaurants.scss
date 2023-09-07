@@ -75,10 +75,21 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+      position: relative;
       & h3 {
         margin: 0px;
         font-weight: 300;
-        text-decoration: underline green;
+        margin-bottom: 7px;
+
+        &::after {
+          content: "";
+          height: 3px;
+          width: 45px;
+          background-color: colors.$tertiary;
+          position: absolute;
+          top: 25px;
+          left: 13px;
+        }
       }
       .meal {
         background-color: white;
@@ -104,15 +115,15 @@
           p {
             margin: 0px;
             font-size: 15px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+            text-overflow: ellipsis; // Cette propriété permet de mettre "..." quand le texte est trop long et est écrasé par un autre élément
+            white-space: nowrap; // Cette propriété empêche le texte de revenir à la ligne
+            overflow: hidden; // Cette propriété permet de cacher le contenu qui est en dehors du container
           }
         }
         .price_and_check {
           display: flex;
           overflow: hidden;
-
+          flex-shrink: 0; // Cette propriété évite que le "check" devienne plus petit en version mobile
           .price {
             padding-top: 20px;
             font-weight: 700;
@@ -136,7 +147,7 @@
               color: colors.$tertiary;
               background-color: white;
               font-size: 20px;
-              aspect-ratio: 1;
+              aspect-ratio: 1; // Cette propriété s'utilise quand on veut que le width et le height aient la même valeur
 
               width: 25px;
               border-radius: 50%;
