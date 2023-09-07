@@ -447,18 +447,17 @@ footer .text_footer i {
 }
 #main_in_menu .section_menu .section_entrees .meal .meal_text {
   padding: 15px;
+  overflow: hidden;
 }
 #main_in_menu .section_menu .section_entrees .meal .meal_text h4 {
   margin: 0px;
   margin-bottom: 5px;
   font-size: 18px;
-  width: 270px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 #main_in_menu .section_menu .section_entrees .meal .meal_text p {
-  width: 270px;
   margin: 0px;
   font-size: 15px;
   text-overflow: ellipsis;
