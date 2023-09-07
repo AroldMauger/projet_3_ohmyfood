@@ -8,20 +8,20 @@
   h2 {
     margin-top: 48px;
     margin-bottom: 26px;
-    padding-left: 28px;
+    padding-left: 40px;
   }
   .fonctionnement {
     counter-reset: steps;
     display: flex;
     flex-direction: column;
     margin-bottom: 68px;
-
     & ol {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 40px;
       position: relative;
+      padding-right: 25px;
     }
     & li {
       &::before {

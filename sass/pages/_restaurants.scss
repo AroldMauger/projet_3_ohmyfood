@@ -47,7 +47,7 @@
         font-size: 24px;
         position: absolute;
         right: 1rem;
-        top: 75%;
+        top: 68%;
         transform: translateY(-140%);
       }
       .fa-solid {
@@ -136,5 +136,60 @@
       transition: box-shadow 0.2s ease;
       @include mixins.base-shadow;
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1135px) {
+  #main_in_menu {
+    margin-top: -35px;
+    margin-inline: 60px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    .restaurant_name {
+      display: flex;
+      justify-content: center;
+      padding-right: 0px;
+      .restaurant_heart {
+        position: relative;
+        left: 100px;
+        bottom: 10px;
+        top: 0px;
+      }
+    }
+    .section_menu {
+      padding-inline: 100px;
+    }
+  }
+  .banner {
+    height: 390px;
+    object-fit: cover;
+    object-position: 0% 60%;
+  }
+}
+
+@media screen and (min-width: 1135px) {
+  #main_in_menu {
+    margin-top: -35px;
+    margin-inline: 192px;
+    .restaurant_name {
+      display: flex;
+      justify-content: center;
+      padding-right: 0px;
+      .restaurant_heart {
+        position: relative;
+        left: 100px;
+        bottom: 10px;
+        top: 0px;
+      }
+    }
+    .section_menu {
+      padding-inline: 200px;
+    }
+  }
+  .banner {
+    height: 390px;
+    object-fit: cover;
+    object-position: 0% 60%;
   }
 }
