@@ -22,8 +22,16 @@
       gap: 40px;
       position: relative;
       padding-right: 25px;
+      transition: opacity 0.2s ease;
+      transition: box-shadow 0.2s ease;
+      .liste_fonctionnement {
+        &:hover {
+          opacity: 0.8;
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
+        }
+      }
     }
-    & li {
+    li {
       &::before {
         content: counter(steps);
         counter-increment: steps;
@@ -51,6 +59,7 @@
       @include mixins.base-shadow;
       display: flex;
       align-items: center;
+
       & .fa-mobile-screen-button {
         color: grey;
       }
