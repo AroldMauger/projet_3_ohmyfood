@@ -260,6 +260,22 @@ header {
 .section_restaurants .restaurants_container .cards_container .restaurant_card .card_content .fa-solid:hover {
   opacity: 1;
 }
+.section_restaurants .restaurants_container .cards_container .restaurant_card .card_content .fa-solid::after {
+  content: "\f004"; /* Code Unicode pour le symbole du cœur */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.section_restaurants .restaurants_container .cards_container .restaurant_card .card_content .fa-solid:hover::after {
+  opacity: 1;
+}
 
 /* MEDIA QUERIES DESKTOP */
 @media screen and (min-width: 1080px) {
@@ -422,6 +438,7 @@ footer .text_footer i {
   margin-right: 15px;
   font-size: 24px;
   color: transparent;
+  position: absolute;
   background-image: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
@@ -429,6 +446,22 @@ footer .text_footer i {
   transition: opacity 0.2s ease;
 }
 #main_in_menu .restaurant_name .restaurant_heart .fa-solid:hover {
+  opacity: 1;
+}
+#main_in_menu .restaurant_name .restaurant_heart .fa-solid::after {
+  content: "\f004"; /* Code Unicode pour le symbole du cœur */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+#main_in_menu .restaurant_name .restaurant_heart .fa-solid:hover::after {
   opacity: 1;
   cursor: pointer;
 }
