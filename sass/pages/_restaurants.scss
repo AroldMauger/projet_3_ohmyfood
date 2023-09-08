@@ -162,7 +162,7 @@
               color: colors.$tertiary;
               background-color: white;
               font-size: 20px;
-              aspect-ratio: 1; // Cette propriété s'utilise quand on veut que le width et le height aient la même valeur
+              aspect-ratio: 1/1; // Cette propriété s'utilise quand on veut que le width et le height aient la même valeur
 
               width: 25px;
               border-radius: 50%;
