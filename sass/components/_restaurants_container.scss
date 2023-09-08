@@ -19,7 +19,7 @@
       .new {
         position: relative;
       }
-      .new::before {
+      .new:before {
         content: "Nouveau";
         position: absolute;
         height: 30px;
@@ -92,7 +92,7 @@
             &:hover {
               opacity: 1;
             }
-            &::after {
+            &:after {
               content: '\f004'; /* Code Unicode pour le symbole du cœur */
               position: absolute;
               top: 0;
@@ -105,7 +105,7 @@
               opacity: 0;
               transition: opacity 0.2s ease;
             }
-            &:hover::after {
+            &:hover:after {
               opacity: 1;
             }
           }

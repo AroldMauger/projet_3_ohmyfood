@@ -66,7 +66,7 @@
         &:hover {
           opacity: 1;
         }
-        &::after {
+        &:after {
           content: '\f004'; /* Code Unicode pour le symbole du cœur */
           position: absolute;
           top: 0;
@@ -79,7 +79,7 @@
           opacity: 0;
           transition: opacity 0.2s ease;
         }
-        &:hover::after {
+        &:hover:after {
           opacity: 1;
           cursor: pointer;
         }
@@ -116,7 +116,7 @@
         font-weight: 300;
         margin-bottom: 7px;
 
-        &::after {
+        &:after {
           content: "";
           height: 3px;
           width: 45px;
@@ -150,7 +150,7 @@
           p {
             margin: 0px;
             font-size: 15px;
-            text-overflow: ellipsis; // Cette propriété permet de mettre "..." quand le texte est trop long et est écrasé par un autre élément
+            text-overflow: ellipsis; // Cette propriété permet de mettre "..." quand le texte est long et écrasé par un autre élément
             white-space: nowrap; // Cette propriété empêche le texte de revenir à la ligne
             overflow: hidden; // Cette propriété permet de cacher le contenu qui est en dehors du container
           }
@@ -158,7 +158,7 @@
         .price_and_check {
           display: flex;
           overflow: hidden;
-          flex-shrink: 0; // Cette propriété évite que le "check" devienne plus petit en version mobile
+          flex-shrink: 0; // évite que le "check" devienne plus petit en version mobile
           .price {
             padding-top: 20px;
             font-weight: 700;
@@ -182,8 +182,7 @@
               color: colors.$tertiary;
               background-color: white;
               font-size: 20px;
-              aspect-ratio: 1/1; // Cette propriété s'utilise quand on veut que le width et le height aient la même valeur
-
+              aspect-ratio: 1/1; 
               width: 25px;
               border-radius: 50%;
             }
@@ -192,7 +191,6 @@
         &:hover {
           box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
           cursor: pointer;
-
           .check {
             margin-right: 0px;
           }

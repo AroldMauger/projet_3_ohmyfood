@@ -194,7 +194,7 @@ header {
 .section_restaurants .restaurants_container .cards_container .new {
   position: relative;
 }
-.section_restaurants .restaurants_container .cards_container .new::before {
+.section_restaurants .restaurants_container .cards_container .new:before {
   content: "Nouveau";
   position: absolute;
   height: 30px;
@@ -264,7 +264,7 @@ header {
 .section_restaurants .restaurants_container .cards_container .restaurant_card .card_content .fa-solid:hover {
   opacity: 1;
 }
-.section_restaurants .restaurants_container .cards_container .restaurant_card .card_content .fa-solid::after {
+.section_restaurants .restaurants_container .cards_container .restaurant_card .card_content .fa-solid:after {
   content: "\f004"; /* Code Unicode pour le symbole du cœur */
   position: absolute;
   top: 0;
@@ -277,7 +277,7 @@ header {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-.section_restaurants .restaurants_container .cards_container .restaurant_card .card_content .fa-solid:hover::after {
+.section_restaurants .restaurants_container .cards_container .restaurant_card .card_content .fa-solid:hover:after {
   opacity: 1;
 }
 
@@ -452,7 +452,7 @@ footer .text_footer i {
 #main_in_menu .restaurant_name .restaurant_heart .fa-solid:hover {
   opacity: 1;
 }
-#main_in_menu .restaurant_name .restaurant_heart .fa-solid::after {
+#main_in_menu .restaurant_name .restaurant_heart .fa-solid:after {
   content: "\f004"; /* Code Unicode pour le symbole du cœur */
   position: absolute;
   top: 0;
@@ -465,7 +465,7 @@ footer .text_footer i {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-#main_in_menu .restaurant_name .restaurant_heart .fa-solid:hover::after {
+#main_in_menu .restaurant_name .restaurant_heart .fa-solid:hover:after {
   opacity: 1;
   cursor: pointer;
 }
@@ -499,7 +499,7 @@ footer .text_footer i {
   font-weight: 300;
   margin-bottom: 7px;
 }
-#main_in_menu .section_menu .section_menu_part h3::after {
+#main_in_menu .section_menu .section_menu_part h3:after {
   content: "";
   height: 3px;
   width: 45px;
