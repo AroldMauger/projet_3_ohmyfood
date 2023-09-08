@@ -215,6 +215,10 @@ header {
   color: black;
   border-radius: 20px;
   background-color: white;
+  transition: box-shadow 0.2s ease;
+}
+.section_restaurants .restaurants_container .cards_container .restaurant_card:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
 .section_restaurants .restaurants_container .cards_container .restaurant_card .card_image {
   width: 100%;
