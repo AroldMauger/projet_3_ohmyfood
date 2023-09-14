@@ -38,6 +38,7 @@ header {
   font-weight: 500;
   background-color: var(--Grey-2, #eaeaea);
   border: none;
+  outline: none;
 }
 @media screen and (min-width: 1080px) {
   .location .location_city {
@@ -220,6 +221,10 @@ header {
 .section_restaurants .restaurants_container .cards_container .restaurant_card:hover {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
+.section_restaurants .restaurants_container .cards_container .restaurant_card a {
+  text-decoration: none;
+  color: black;
+}
 .section_restaurants .restaurants_container .cards_container .restaurant_card .card_image {
   width: 100%;
   height: 70%;
@@ -361,13 +366,14 @@ footer .text_footer i {
   justify-content: center;
   align-items: center;
   animation: hide 0s 2s forwards; /* Animation du spinner */
+  background-color: white;
+  opacity: 0.7;
 }
 
 .spinner {
   border: 15px solid #ff79da;
   border-top: 15px solid #9356dc;
   border-radius: 50%;
-  opacity: 0.7;
   width: 250px;
   height: 250px;
   animation: spin 2s linear infinite;
