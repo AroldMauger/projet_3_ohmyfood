@@ -134,6 +134,7 @@
         @include mixins.base-shadow;
         justify-content: space-between;
         transition: box-shadow 0.2s;
+        overflow: hidden;
 
         .meal_text {
           padding: 15px;
@@ -176,6 +177,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
+
             .fa-check {
               display: grid;
               place-items: center;
