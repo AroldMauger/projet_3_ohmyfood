@@ -9,11 +9,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: hide 0s 2s forwards; /* Animation du spinner */
+  animation: hide 0s 2s forwards; 
   background-color:white;
   opacity:0.7;
 
-}
+} 
 .spinner {
   border: 15px solid colors.$secondary;
   border-top: 15px solid colors.$primary;

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   background-color: white;
+  min-width: 320px;
 
   h2 {
     margin-top: 48px;
@@ -14,16 +15,22 @@
     counter-reset: steps;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     margin-bottom: 68px;
+    width: 100%;
     & ol {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 40px;
       position: relative;
-      padding-right: 25px;
       transition: opacity 0.2s ease;
       transition: box-shadow 0.2s ease;
+      width: 100%;
+      max-width:430px;
+      padding-right: 10px;
       .liste_fonctionnement {
         &:hover {
           opacity: 0.8;
@@ -47,14 +54,13 @@
         position: absolute;
         left: 20px;
       }
-
+      width:100%;
       background-color: rgba(246, 246, 246, 1);
       padding: 28px 28px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
       border-radius: 20px;
       font-weight: 500;
       font-size: 16px;
-      width: 325px;
       height: 75px;
       @include mixins.base-shadow;
       display: flex;
@@ -88,13 +94,23 @@
     .fonctionnement {
       & ol {
         flex-direction: row;
+        width: 80%;
+        max-width:none;
       }
       & li {
+
         &::before {
           position: relative;
           left: -40px;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .fonctionnement_container {
+    .fonctionnement {
+      display: block;
     }
   }
 }
